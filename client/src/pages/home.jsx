@@ -8,6 +8,9 @@ import HomeShop from "../components/ShopHome";
 import { shop } from "../data/shop";
 import BrowseHome from "../components/BrowseHome";
 import ShopHomeSecond from "../components/ShopHome2";
+import NewsLetter from "../components/Newsletter";
+import Footer from "../components/Footer";
+import { footerData, footerLinks, footerPayment } from "../data/footer";
 
 const HomePage = () => {
   return (
@@ -18,6 +21,12 @@ const HomePage = () => {
       <HomeShop shop={shop} />
       <BrowseHome />
       <ShopHomeSecond shop={shop} />
+      <NewsLetter />
+      <Footer
+        footerData={footerData}
+        footerPayment={footerPayment}
+        footerLinks={footerLinks}
+      />
     </div>
   );
 };

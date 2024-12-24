@@ -1,19 +1,13 @@
 import React from "react";
 
-const HomeShop = ({ shop }) => {
+const ProductsListing = ({ listingProducts }) => {
   return (
-    <div className="px-32 py-14">
-      <div className="flex items-center flex-col pb-20">
-        <div>
-          <p className="text-left pb-3 text-neutral-300">SHOP NOW</p>
-          <h1 className="text-4xl font-bold">Best Selling</h1>
-        </div>
-      </div>
-      <div className="flex items-center justify-between">
-        {shop.map((item) => (
+    <div className="pr-32 ">
+      <div className="flex items-center flex-wrap gap-5 justify-between">
+        {listingProducts.map((item) => (
           <div className="flex flex-col gap-3 rounded-md">
             <div className=" bg-[#f6f6f6]">
-              <img className="w-[250px]" src={item.img} />
+              <img className="w-[220px]" src={item.img} />
             </div>
             <div className="flex flex-col bg-white px-2 py-3 gap-5">
               <h5 className="font-sans">{item.title}</h5>
@@ -37,4 +31,4 @@ const HomeShop = ({ shop }) => {
   );
 };
 
-export default HomeShop;
+export default ProductsListing;

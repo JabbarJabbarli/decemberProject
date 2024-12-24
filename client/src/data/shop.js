@@ -1,4 +1,4 @@
-import blackTshirt from "../assets/global/cover.jpg";
+import blackTshirt from "../assets/global/productCardImg.png";
 
 export const shop = [
   {
@@ -25,4 +25,5 @@ export const shop = [
     stock: true,
     price: 43,
   },
+  
 ];

@@ -1,4 +1,3 @@
-
 export const links = [
   {
     name: "Home",
@@ -15,5 +14,13 @@ export const links = [
   {
     name: "Contact",
     location: "/location",
+  },
+  {
+    name: "Product",
+    location: "/product",
+  },
+  {
+    name: "Listing",
+    location: "/listing",
   },
 ];

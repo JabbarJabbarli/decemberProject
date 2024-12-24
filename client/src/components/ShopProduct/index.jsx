@@ -1,12 +1,12 @@
 import React from "react";
 
-const HomeShop = ({ shop }) => {
+const ProductShop = ({ shop }) => {
   return (
     <div className="px-32 py-14">
-      <div className="flex items-center flex-col pb-20">
-        <div>
-          <p className="text-left pb-3 text-neutral-300">SHOP NOW</p>
-          <h1 className="text-4xl font-bold">Best Selling</h1>
+      <div className="pb-20">
+        <div className="flex flex-col gap-2 items-start">
+          <h1 className="text-4xl font-bold">You might also like</h1>
+          <p className="text-left pb-3 text-neutral-300">SIMILAR PRODUCTS</p>
         </div>
       </div>
       <div className="flex items-center justify-between">
@@ -37,4 +37,4 @@ const HomeShop = ({ shop }) => {
   );
 };
 
-export default HomeShop;
+export default ProductShop;
