@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ButtonFunc from "../ButtonFunc";
 
 const ProductCard = ({ productCardInfo, productCardImage }) => {
   const [increment, setIncrement] = useState(1);
@@ -77,17 +78,8 @@ const ProductCard = ({ productCardInfo, productCardImage }) => {
                 </div>
               </div>
 
-              <div>
-                <div className="flex items-center justify-between px-2 py-2 w-[150px] border">
-                  <button onClick={() => decrease()} className="text-2xl">
-                    -
-                  </button>
-                  <p>{increment}</p>
-                  <button onClick={() => increase()} className="text-2xl">
-                    +
-                  </button>
-                </div>
-              </div>
+              <ButtonFunc />
+
               <div>
                 <button className="bg-black text-white rounded-md px-32 py-3">
                   ADD TO CART

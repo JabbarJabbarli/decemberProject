@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductShop = ({ shop }) => {
   return (
-    <div className="px-32 py-14">
+    <div className="px-32">
       <div className="pb-20">
         <div className="flex flex-col gap-2 items-start">
           <h1 className="text-4xl font-bold">You might also like</h1>

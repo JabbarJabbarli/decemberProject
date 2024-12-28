@@ -6,8 +6,8 @@ const ProductsListing = ({ listingProducts }) => {
       <div className="flex items-center flex-wrap gap-5 justify-between">
         {listingProducts.map((item) => (
           <div className="flex flex-col gap-3 rounded-md">
-            <div className=" bg-[#f6f6f6]">
-              <img className="w-[220px]" src={item.img} />
+            <div className="w-[220px] flex items-center justify-center object-cover bg-[#f6f6f6]">
+              <img className="" src={item.img} />
             </div>
             <div className="flex flex-col bg-white px-2 py-3 gap-5">
               <h5 className="font-sans">{item.title}</h5>

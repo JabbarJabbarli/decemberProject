@@ -1,12 +1,33 @@
+
 export const reviewsData = [
   {
-    title: "Detail",
-    data: "Elevate your everyday style with our Men's Black T-Shirts, the ultimate wardrobe essential for modern men. Crafted with meticulous attention to detail and designed for comfort, these versatile black tees are a must-have addition to your collection.The classic black color never goes out of style. Whether you're dressing up for a special occasion or keeping it casual, these black t-shirts are the perfect choice, effortlessly complementing any outfit.",
+    title: "Reviews",
+    reviewInfo: "4.2 - 54 Reviews",
+    buttonInfo: "Write a review",
     info: [
-      "Premium Quality",
-      "Versatile Wardrobe Staple",
-      "Available in Various Sizes",
-      "Tailored Fit",
+      {
+        profPic: "ED",
+        name: "Emily Davis",
+        publishTime: "1 WEEK AGO",
+        comment:
+          "This company always goes above and beyond to satisfy their customers.",
+        starCount: 4,
+      },
+      {
+        profPic: "ED",
+        name: "Daniel Smith",
+        publishTime: "2 Month ago",
+        comment:
+          "I can't believe how affordable and high-quality this item is!",
+        starCount: 4,
+      },
+      {
+        profPic: "ED",
+        name: "Benjamin Clark",
+        publishTime: "23 April",
+        comment: "These guys know their stuff, and it shows in their products.",
+        starCount: 4,
+      },
     ],
   },
 ];

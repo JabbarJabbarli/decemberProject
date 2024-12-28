@@ -3,14 +3,14 @@ import Header from "../components/Header";
 import { links } from "../data/header";
 import ProductCard from "../components/ProductCard";
 import { productCardImage, productCardInfo } from "../data/productCard";
-import Reviews from "../components/Reviews";
-import { reviewsData } from "../data/reviews";
 import ProductShop from "../components/ShopProduct";
 import { shop } from "../data/shop";
 import NewsLetter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { footerData, footerLinks, footerPayment } from "../data/footer";
-
+import { Outlet } from "react-router-dom";
+import OutletLinks from "../components/Outlet";
+import { reviewsData } from "../data/reviews";
 const ProductPage = () => {
   return (
     <div>
@@ -19,7 +19,10 @@ const ProductPage = () => {
         productCardInfo={productCardInfo}
         productCardImage={productCardImage}
       />
-      <Reviews reviewsData={reviewsData} />
+      <div className="flex px-32 items-center py-20">
+        <OutletLinks reviewsData={reviewsData} />
+        <Outlet />
+      </div>
       <ProductShop shop={shop} />
       <NewsLetter />
       <Footer
